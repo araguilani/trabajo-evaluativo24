@@ -1,0 +1,46 @@
+/* Estilos Generales */
+.container {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 15px; /* Espacio entre elementos */
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.contenido {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    transition: transform 0.2s ease; /* Animación en hover */
+    display: inline-block;
+}
+.contenido:hover {
+    transform: translateY(-5px); /* Efecto de levitación */
+}
+p {
+    padding: 5px;
+    font-size: 1rem;
+}
+/* Media Queries para Responsividad */
+@media (max-width: 700px) {
+    .contenido {
+        width: 100%; /* Anchura completa en pantallas pequeñas */
+        margin: 10px 0;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 700px) {
+    .contenido {
+        width: 350px; /* Mantiene el ancho fijo en pantallas más grandes */
+    }
+}
